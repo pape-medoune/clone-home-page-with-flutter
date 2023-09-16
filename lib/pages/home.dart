@@ -65,9 +65,10 @@ class Home extends StatelessWidget {
               alignment: Alignment.center,
               child: const TextField(
                 decoration: InputDecoration(
-                  hintText: "Find a food or a restaurant",
+                  hintText: "Find a food or a Restaurant",
                   hintStyle: TextStyle(
                     fontSize: 20,
+                    fontWeight: FontWeight.bold,
                   ),
                   prefixIcon: Icon(
                     Icons.search,
@@ -82,7 +83,218 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/meal.jpg",
+                      width: 65,
+                      height: 65,
+                      fit: BoxFit.contain,
+                    ),
+                    const Text("Proteins"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/burger.jpg",
+                      width: 65,
+                      height: 65,
+                      fit: BoxFit.contain,
+                    ),
+                    const Text("Burger"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/frie.jpg",
+                      width: 65,
+                      height: 65,
+                      fit: BoxFit.contain,
+                    ),
+                    const Text("Fastfood"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/salads.jpg",
+                      width: 65,
+                      height: 65,
+                      fit: BoxFit.contain,
+                    ),
+                    const Text("Salads"),
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 35,
+            ),
+            const Row(
+              children: [
+                Text(
+                  "Popular Food",
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.white54,
+                    border: Border.all(
+                      color: Color.fromARGB(90, 19, 15, 15),
+                      width: 0.4,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          const Row(
+                            children: [
+                              SizedBox(
+                                width: 145,
+                              ),
+                              Icon(Icons.favorite),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Image.asset(
+                                "assets/images/chickenplat.jpeg",
+                                width: 120,
+                                height: 120,
+                                fit: BoxFit.contain,
+                              ),
+                            ],
+                          ),
+                          const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Salmon",
+                              ),
+                              SizedBox(
+                                width: 93,
+                              ),
+                              Icon(Icons.send)
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "4.5(168)",
+                              ),
+                              SizedBox(
+                                width: 70,
+                              ),
+                              Text(
+                                "\$40.50",
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                        color: Colors.white54,
+                        border: Border.all(
+                          color: Color.fromARGB(90, 19, 15, 15),
+                          width: 0.4,
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              const Row(
+                                children: [
+                                  SizedBox(
+                                    width: 145,
+                                  ),
+                                  Icon(Icons.favorite),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/chickenplat.jpeg",
+                                    width: 120,
+                                    height: 120,
+                                    fit: BoxFit.contain,
+                                  ),
+                                ],
+                              ),
+                              const Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Salmon",
+                                  ),
+                                  SizedBox(
+                                    width: 93,
+                                  ),
+                                  Icon(Icons.send)
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "4.5(168)",
+                                  ),
+                                  SizedBox(
+                                    width: 70,
+                                  ),
+                                  Text(
+                                    "\$40.50",
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ],
         ),
       ),
