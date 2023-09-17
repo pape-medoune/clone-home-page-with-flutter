@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
       //   backgroundColor: Colors.white,
       // ),
       body: SingleChildScrollView(
+        // scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.only(
           top: 75,
           right: 10,
@@ -156,6 +157,7 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
+                  margin: const EdgeInsets.all(5),
                   padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
                     color: Colors.white54,
@@ -163,6 +165,14 @@ class Home extends StatelessWidget {
                       color: Color.fromARGB(90, 19, 15, 15),
                       width: 0.4,
                     ),
+                    boxShadow: const [
+                      BoxShadow(
+                        blurRadius: 5.0,
+                        offset: Offset(2, 4),
+                        spreadRadius: 2.0,
+                        color: Color.fromARGB(72, 158, 158, 158),
+                      ),
+                    ],
                   ),
                   child: Row(
                     children: [
@@ -180,7 +190,7 @@ class Home extends StatelessWidget {
                           Row(
                             children: [
                               Image.asset(
-                                "assets/images/chickenplat.jpeg",
+                                "assets/images/platsalade.jpg",
                                 width: 120,
                                 height: 120,
                                 fit: BoxFit.contain,
@@ -224,6 +234,7 @@ class Home extends StatelessWidget {
                 Row(
                   children: [
                     Container(
+                      margin: const EdgeInsets.all(5),
                       padding: const EdgeInsets.all(15),
                       decoration: BoxDecoration(
                         color: Colors.white54,
@@ -231,6 +242,14 @@ class Home extends StatelessWidget {
                           color: Color.fromARGB(90, 19, 15, 15),
                           width: 0.4,
                         ),
+                        boxShadow: const [
+                          BoxShadow(
+                            blurRadius: 5.0,
+                            offset: Offset(2, 4),
+                            spreadRadius: 2.0,
+                            color: Color.fromARGB(72, 158, 158, 158),
+                          ),
+                        ],
                       ),
                       child: Row(
                         children: [
@@ -293,7 +312,32 @@ class Home extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  width: 15,
+                ),
               ],
+            ),
+            const SizedBox(
+              height: 35,
+            ),
+            const Row(
+              children: [
+                Text(
+                  "Best Food",
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Row(
+              children: [],
             ),
           ],
         ),
